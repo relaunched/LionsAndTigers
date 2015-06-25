@@ -28,7 +28,11 @@ class ViewController: UIViewController {
         myTiger.breed = "Bengal"
         myTiger.age = 3
         myTiger.image = UIImage(named: "BengalTiger.jpg")
+        
+        myTiger.age = myTiger.ageInYearsFromAge(myTiger.age)
+        
         myTiger.chuff()
+        myTiger.chuffNumberOfTimes(5, isLoud: false)
         
         println("My Tiger's name is: \(myTiger.name), it's age is: \(myTiger.age), it's breed is: \(myTiger.age), and its image is \(myTiger.image)")
         
@@ -43,17 +47,24 @@ class ViewController: UIViewController {
         secondTiger.age = 2
         secondTiger.image = UIImage(named: "IndochineseTiger.jpg")
         
+        secondTiger.age = secondTiger.ageInYearsFromAge(secondTiger.age)
+        secondTiger.chuff()
+        
         var thirdTiger = Tiger()
         thirdTiger.name = "Jacob"
         thirdTiger.breed = "Malayan Tiger"
         thirdTiger.age = 4
         thirdTiger.image = UIImage(named: "MalayanTiger.jpg")
         
+        thirdTiger.age = thirdTiger.ageInYearsFromAge(thirdTiger.age)
+        
         var fourthTiger = Tiger()
         fourthTiger.name = "Spar"
         fourthTiger.breed = "Siberian Tiger"
         fourthTiger.age = 5
         fourthTiger.image = UIImage(named: "SiberianTiger.jpg")
+        
+        fourthTiger.age = fourthTiger.ageInYearsFromAge(fourthTiger.age)
         
         myTigers.append(myTiger)
         myTigers += [secondTiger, thirdTiger, fourthTiger]
@@ -62,7 +73,6 @@ class ViewController: UIViewController {
         secondTiger.chuffNumberOfTimes(3)
         
         var currentIndex = "String"
-        self.currentIndex = 2
         
         
         
