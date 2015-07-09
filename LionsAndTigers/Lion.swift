@@ -23,4 +23,18 @@ class Lion {
     func changeToAlphaMale() {
         self.isAlphaMale = true
     }
+    
+    func randomFact() -> String {
+        var randomFact:String
+        
+        if self.isAlphaMale {
+            randomFact = "Male lions are easy to recongnize thanks to their distinctive manes. Males with darker manes are more likely to attract females"
+        }
+        else {
+            randomFact = "Female lionesses from the stable  social unit and do not tolerate outside females"
+        }
+        
+        return randomFact
+        
+    }
 }
