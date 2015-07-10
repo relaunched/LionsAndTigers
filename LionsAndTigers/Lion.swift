@@ -15,6 +15,7 @@ class Lion {
     var image = UIImage(named:"")
     var name = ""
     var subspecies = ""
+    //testing merge from experimental branch into master
     
     func roar() {
         println("Lion: Roar Roar")
