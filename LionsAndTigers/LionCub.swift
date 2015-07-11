@@ -19,4 +19,18 @@ class LionCub:Lion {
         super.roar()
         println("Lion cub: growl! growl!")
     }
+    
+    override func randomFact() -> String {
+        var randomFactString:String
+        
+        if isAlphaMale {
+            randomFactString = "Cubs are usually hidden in the bush for approximately 6 weeks"
+        }
+        
+        else {
+            randomFactString = "Cubs begin eating meat at about the age of 6 weeks"
+        }
+        
+        return randomFactString 
+    }
 }
