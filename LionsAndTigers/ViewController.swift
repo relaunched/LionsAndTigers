@@ -25,6 +25,8 @@ class ViewController: UIViewController {
     var currentAnimal = (species: "Tiger", index: 0)
     
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -98,7 +100,18 @@ class ViewController: UIViewController {
         lioness.subspecies = "Barbary"
         lioness.roar()
         
-        lions += [lion,lioness]
+        var lionCub = LionCub()
+        lionCub.age = 1
+        lionCub.name = "Simba"
+        lionCub.image = UIImage(named: "lionCub1.jpg")
+        lionCub.subspecies = "Masai"
+        lionCub.roar()
+        lionCub.rubLionCubsBelly()
+
+        
+        lions += [lion,lioness, lionCub]
+        
+        
         
         
         
